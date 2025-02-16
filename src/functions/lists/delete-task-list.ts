@@ -1,5 +1,5 @@
 import { eq } from 'drizzle-orm'
-import { db } from '../../db'
+import { db } from '../../db/_index'
 import { goals, taskLists } from '../../db/schema'
 
 interface DeleteTaskListRequest {

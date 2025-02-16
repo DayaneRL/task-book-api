@@ -1,4 +1,4 @@
-import { db } from '../../db'
+import { db } from '../../db/_index'
 import { goals } from '../../db/schema'
 
 interface CreateTaskRequest {

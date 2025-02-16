@@ -1,4 +1,4 @@
-import { db } from '../../db'
+import { db } from '../../db/_index'
 import { taskLists } from '../../db/schema'
 
 interface CreateTaskListRequest {
@@ -12,7 +12,7 @@ export async function createTaskList({
   description,
   status,
 }: CreateTaskListRequest) {
-  console.log(title)
+  
   const result = await db
     .insert(taskLists)
     .values({

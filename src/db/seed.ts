@@ -1,5 +1,5 @@
 import dayjs from 'dayjs'
-import { client, db } from '.'
+import { client, db } from './_index'
 import { taskLists, goals } from './schema'
 
 async function seed() {
