@@ -3,7 +3,6 @@ import {
   serializerCompiler,
   validatorCompiler,
 } from 'fastify-type-provider-zod'
-import type { ZodTypeProvider } from 'fastify-type-provider-zod'
 
 import { createTaskRoute } from './routes/tasks/create-task'
 import { updateGoalConclusionRoute } from './routes/tasks/update-goal-conclusion'
@@ -19,8 +18,7 @@ import { editTaskListRoute } from './routes/lists/edit-task-list'
 
 import fastifyCors from '@fastify/cors'
 
-const app = fastify().withTypeProvider<ZodTypeProvider>()
-// const app = fastify()
+const app = fastify()
 
 app.register(fastifyCors, {
   origin: '*',
