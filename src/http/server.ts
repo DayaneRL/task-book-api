@@ -20,7 +20,6 @@ import { editTaskListRoute } from './routes/lists/edit-task-list'
 import fastifyCors from '@fastify/cors'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
-// const app = fastify()
 
 app.register(fastifyCors, {
   origin: '*',

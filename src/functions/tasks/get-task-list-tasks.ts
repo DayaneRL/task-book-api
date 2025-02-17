@@ -1,4 +1,4 @@
-import { db } from '../../db/_index'
+import { db } from '../../db'
 import { goals, taskLists } from '../../db/schema'
 import { and, count, desc, eq, gte, lte, sql } from 'drizzle-orm'
 

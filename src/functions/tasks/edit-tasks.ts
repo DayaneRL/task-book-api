@@ -1,5 +1,5 @@
 import { eq } from 'drizzle-orm'
-import { db } from '../../db/_index'
+import { db } from '../../db'
 import { goals } from '../../db/schema'
 
 interface editTaskRequest {
