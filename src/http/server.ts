@@ -45,10 +45,10 @@ app.get('/', async () => {
   return { message: 'App is running...' }
 })
 
+const port = process.env.PORT || 3333;
+
 app
-  .listen({
-    port: 3333,
-  })
+  .listen(port)
   .then(() => {
     console.log('Listening on port 3333')
   })
